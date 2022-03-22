@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Demo for appendChild() Method</title>
+    <style>
+      h1,
+      h2 {
+        font-weight: italic;
+        color: blue;
+      }
+      body {
+        margin-left: 150px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>EduCBA</h1>
+    <h2>Demo for appendChild() Method</h2>
+    <ul id="edu">
+      <li>Computer Science</li>
+      <li>Data Analytics using Python</li>
+    </ul>
+    <button onclick="educba()">Submit</button>
+    <script>
+      function educba() {
+        var node = document.createElement("LI");
+        var textnew = document.createTextNode("Data Analytics");
+        node.appendChild(textnew);
+        document.getElementById("edu").appendChild(node);
+      }
+    </script>
+  </body>
+</html>
